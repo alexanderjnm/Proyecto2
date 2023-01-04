@@ -77,3 +77,10 @@ form button:hover{
 .complete-btn{
   background: green;
 }
+.todo.item{
+  padding: 0rem 0.5rem;
+}
+
+.fa-trash, .fa-check{
+  pointer-events: none;
+}
