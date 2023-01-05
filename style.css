@@ -2,10 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 
 body{
-  background-image: linear-gradient(120deg,#8a3aa7, #0a0f58);
+  background-image: linear-gradient(120deg,#434040, #3b3b52);
   color: white;
   font-family: "poppins", sans-serif;
   min-height: 100vh;
@@ -129,4 +130,63 @@ select{
 .select:hover::after{
   background: white;
   color: #0a0f58;
+}
+
+footer{
+  width: 100%;
+  min-height: 300px;
+  max-height: auto;
+background-image: linear-gradient( #0c12b3, #2d2c57,);
+  clear: both;
+  justify-content: center;
+  align-items: center;
+  margin-top: 11rem;
+  
+}
+footer .footer-wrap{
+  width: 80%;
+  margin: 0 auto;
+  padding-left: 9%;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+.widgetFooter{
+  
+  height: auto;
+  padding: 1.5%;
+  text-align: center;
+  justify-content: center;
+}
+
+ul#footerUsefulLink, ul#footerMediaLinks{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  line-height: 40px;
+  text-transform: capitalize;
+}
+ul#footerUsefulLink li, ul#footerMediaLinks li{
+  cursor: pointer;
+  /* transition: border-bottom 3s ease-in; */
+}
+
+
+
+ul#footerMediaLinks li:hover span.git, ul#footerMediaLinks li:hover a.git { color: #f1502f; }
+ 
+
+ 
+div.footerCopy{
+  clear: both;
+  color: white;
+  text-align: center;
+  padding-bottom: 5px;
+  border-top: none;
+  background: #0a0f58;
+}
+
+.fcc-btn {  
+  color: white;
+  margin-left: 0.5rem;  
 }
