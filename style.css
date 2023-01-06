@@ -77,6 +77,11 @@ form button:hover{
   font-size: 1rem;
 }
 
+.fa-edit{
+  font-size: 2rem;
+  border: none;
+  color: #0a0f58;
+}
 .complete-btn{
   background: green;
 }
@@ -84,7 +89,7 @@ form button:hover{
   padding: 0rem 0.5rem;
 }
 
-.fa-trash, .fa-check{
+.fa-trash, .fa-check, .fa-edit{
   pointer-events: none;
 }
 
