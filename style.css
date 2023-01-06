@@ -1,3 +1,10 @@
+@media only screen and (max-width: 600px) {
+  /* styles for small screens go here */
+  .todo-container {
+    flex-direction: column;
+  }
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -9,7 +16,7 @@ body{
   background-image: linear-gradient(120deg,#434040, #3b3b52);
   color: white;
   font-family: "poppins", sans-serif;
-  min-height: 100vh;
+  min-height: 20px;
 }
 
 header{
@@ -18,7 +25,7 @@ header{
 }
 
 header, form{
-  min-height: 20vh;
+  min-height: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -46,6 +53,9 @@ form button:hover{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.todo-input{
+  min-width: 20px;
 }
 
 .todo-list{
