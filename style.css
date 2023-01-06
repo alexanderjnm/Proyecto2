@@ -2,8 +2,8 @@
   /* styles for small screens go here */
   .todo-container {
     
-    width: 60%; /* or any other value */
-    max-width: 500px; /* or any other value */
+    width: 100%; /* or any other value */
+    max-width: 600px; /* or any other value */
     display: flex;
     justify-content: center;
     align-items: center;
