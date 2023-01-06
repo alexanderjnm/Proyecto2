@@ -1,7 +1,19 @@
 @media only screen and (max-width: 600px) {
   /* styles for small screens go here */
   .todo-container {
-    flex-direction: column;
+    
+    width: 60%; /* or any other value */
+    max-width: 500px; /* or any other value */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .todo-input{
+    width: 50%; /* or any other value */
+    max-width: 500px; /* or any other value */
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -59,7 +71,7 @@ form button:hover{
 }
 
 .todo-list{
-  min-width: 30%;
+  min-width: 20px;
   list-style: none;
 }
 
@@ -119,6 +131,7 @@ select{
   appearance: none;
   outline: none;
   border: none;
+  justify-content: space-between;
 }
 
 .select{
@@ -128,7 +141,7 @@ select{
 }
 select{
   color: #0a0f58;
-  width: 10rem;
+  width: 5rem;
   cursor: pointer;
   padding: 1rem;
 }

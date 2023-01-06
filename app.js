@@ -188,3 +188,41 @@ function updateLocalTodos(oldTodo, newTodo) {
   todos[todoIndex] = newTodo;
   localStorage.setItem('todos', JSON.stringify(todos));
 }
+
+function addTodo(event){
+  //Prvent form fron submitting
+  event.preventDefault();
+  // Check if the to-do input field is empty
+  if(todoInput.value.trim() === "") {
+    return;
+  }
+  //Todo DIV
+  const todoDiv = document.createElement("div");
+  todoDiv.classList.add("todo");
+  //Create LI
+  const newTodo = document.createElement('li');
+  newTodo.innerText = todoInput.value;
+  newTodo.classList.add('todo-item');
+  todoDiv.appendChild(newTodo);
+  //add todo to localstorage
+  saveLocalTodos(todoInput.value);
+  //check mark button
+  const completeButton = document.createElement('button');
+  completeButton.innerHTML = '<i class="fas fa-check"></i>';
+  completeButton.classList.add("complete-btn");
+  todoDiv.appendChild(completeButton);
+  //check trash button
+  const trashButton = document.createElement('button');
+  trashButton.innerHTML = '<i class="fas fa-trash"></i>';
+  trashButton.classList.add("trash-btn");
+  todoDiv.appendChild(trashButton);
+  //check edit button
+  const editButton = document.createElement('button');
+  editButton.innerHTML = '<i class="fas fa-edit"></i>';
+  editButton.classList.add("edit-btn");
+  todoDiv.appendChild(editButton);
+  //APPEND TO LIST
+  todoList.appendChild(todoDiv);
+  //clear todo input value
+  todoInput.value = "";
+}
